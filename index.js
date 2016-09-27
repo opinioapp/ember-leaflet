@@ -9,7 +9,7 @@ module.exports = {
   included: function (app) {
 
     let bowerPath = app.bowerDirectory;
-    if (typeof app.bowerDirectory !== 'undefined') {
+    if (typeof app.bowerDirectory === 'undefined') {
       bowerPath = app.parent.bowerDirectory;
     }
     //import javascript
